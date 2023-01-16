@@ -6,7 +6,7 @@
       var oldprice = 0;
       function updatePrice() {
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://api.coinbase.com/v2/prices/eth-usd/spot", true);
+        xhr.open("GET", "https://api.coinbase.com/v2/prices/ltc-usd/spot", true);
         xhr.onreadystatechange = function() {
           if (xhr.readyState === 4) {
             var r = JSON.parse(xhr.responseText);
