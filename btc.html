@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script>
       var oldprice = 0;
       function updatePrice() {
@@ -51,10 +52,17 @@
         .card-info {
             text-align: center;
         }
+        .fa-bitcoin{
+          color: white;
+          font-size: 35px;
+          position: middle;
+          position: absolute;
+        }
     </style>
   </head>
   <body>
     <div class="card">
+      <i class="fab fa-bitcoin" style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);"></i>
         <div class="card-info">
             <div id="price"></div>
         </div>
